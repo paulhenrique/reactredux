@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { ChakraProvider, Container, Heading, Stack } from "@chakra-ui/react";
-import CourseList from "./components/CourseList";
+import Todo from "./components/Todo";
 
 import store from "./store";
 
@@ -16,7 +16,7 @@ function App() {
         </Stack>
         <Provider store={store}>
           <div className="App">
-            <CourseList />
+            <Todo />
           </div>
         </Provider>
       </Container>

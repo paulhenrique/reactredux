@@ -12,7 +12,7 @@ import {
 
 function CourseList() {
   const tasks = useSelector((state) => state.data);
-  const completeTasks = useSelector(state => state.completed);
+  const completeTasks = useSelector((state) => state.completed);
   const dispatch = useDispatch();
   const [task, setTask] = React.useState("");
 
