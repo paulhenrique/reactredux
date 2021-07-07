@@ -47,7 +47,11 @@ function CourseList() {
           <Flex align="center">
             <span>{course.title}</span>
             <Spacer></Spacer>
-            <Button size="sm" onClick={() => addTaskToCompleteList(course.id)}>
+            <Button
+              mr="2"
+              size="sm"
+              onClick={() => addTaskToCompleteList(course.id)}
+            >
               Completa
             </Button>
             <Button size="sm" onClick={() => removeTaskFromList(course.id)}>
